@@ -1,0 +1,15 @@
+version: '3.1'
+
+
+services:
+
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: 1234
+      POSTGRES_USER: aiohttp
+      POSTGRES_DB: aiohttpdb
+
+    ports:
+      - 5431:5432
